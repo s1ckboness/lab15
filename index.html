@@ -3,95 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Venta de Condimentos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>
-            Bienvenidos a mi pagina web.
-        </h1> 
+            Bienvenidos a mi página web
+        </h1>
     </header>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="#Inicio"></a>
-            </li>
-            <li>
-                <a href="#Productos"></a>
-                <ul>
-                    <li>
-                        <a href="#Canela"></a>
-                    </li>
-                    <li>
-                        <a href="#Clavito"></a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#Contacto"></a>
-            </li>
-            <li>
-                <a href="http://www.unilibre.edu.co">Unilibre</a>
-            </li>
-        </ul>
-    </nav>
-
-    <div id="Contenedor Principal">
-        <section id="#Inicio">
+    <div id="contenedor-principal">
+        <section id="Inicio">
             <h2>
-                Inicio.
+                Inicio
             </h2>
             <p>
                 Acá podrás encontrar todos los condimentos que necesites para tus alimentos, pregunte por lo que ve y lo que no ve.
             </p>
+            <button onclick="mostrarMensaje('Inicio')">Mostrar mensaje</button>
         </section>
 
-        <section id="Productos"> 
-            <h2>Menú de productos</h2> 
-            <div class="producto"> 
+        <section id="Productos">
+            <h2>
+                Menú de productos
+            </h2>
+            <div class="producto">
                 <h3 id="Canela">
                     Canela
-                </h3>  
+                </h3>
                 <p>
                     La canela es una especia dulce y cálida, obtenida de la corteza de árboles. Se utiliza en postres y platos salados, y tiene propiedades antioxidantes y antiinflamatorias.
-                </p> 
-                <article> 
+                </p>
+                <article>
                     <h3>
                         Beneficios de la Canela
-                    </h3> 
+                    </h3>
                     <p>
-                        La canela <span>mejora la salud cardiovascular</span> y ayuda a regular los niveles de azúcar en la sangre.
-                    </p> 
-                </article> 
-            </div> 
-            <div class="producto"> 
+                        La canela <span class="resaltar">mejora la salud cardiovascular</span> y ayuda a regular los niveles de azúcar en la sangre.
+                    </p>
+                </article>
+                <button onclick="mostrarMensaje('Productos - Canela')">Mostrar mensaje</button>
+            </div>
+            <div class="producto">
                 <h3 id="Clavito">
                     Clavito
-                </h3>  
+                </h3>
                 <p>
                     El clavito, o clavo de olor, es una especia con un sabor fuerte y aroma característico. Se usa en guisos y postres, y tiene propiedades antimicrobianas y analgésicas.
-                </p> 
-                <article> 
+                </p>
+                <article>
                     <h3>
                         Beneficios del Clavito
-                    </h3> 
+                    </h3>
                     <p>
-                        El clavito <span>tiene propiedades antimicrobianas</span> y ayuda a aliviar el dolor dental.
-                    </p> 
-                </article> 
-            </div> 
+                        El clavito <span class="resaltar">tiene propiedades antimicrobianas</span> y ayuda a aliviar el dolor dental.
+                    </p>
+                </article>
+                <button onclick="mostrarMensaje('Productos - Clavito')">Mostar mensaje</button>
+            </div>
+        </section>
+
+        <section id="Contacto">
+            <h2>
+                Contáctanos
+            </h2>
+            <p>
+                <a href="https://api.whatsapp.com/send?phone=573106125530/">Vía Whatsapp</a>
+            </p>
+            <p>
+                Vía Telefónica - 310 6718480
+            </p>
+            <button onclick="mostrarMensaje('Contacto')">Mostrar mensaje</button>
         </section>
     </div>
-
-    <footer> 
-        <hr> 
-        <p>&copy; 2024 Mi Página Web, Todos los derechos reservados a Juan Peñuela.</p> 
-        <p>Correo: juandavidpenuelaperez24@gmail.com</p> 
-    </footer>
-    
     <script src="script.js"></script>
-    
 </body>
 </html>
