@@ -1,5 +1,5 @@
 function mostrarMensaje(seccion) 
 {
-    alert('Mensaje de la' + seccion );
+    alert('Mensaje de' + seccion );
 }
 
